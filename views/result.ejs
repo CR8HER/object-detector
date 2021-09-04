@@ -16,7 +16,7 @@
 
     <img src="<%= img%>" alt="uploaded image" /><br>
 
-   <h2> Objects found: </h2>
+   <h1> Objects found: </h1>
     <ul>
       <% for(let i = 0; i < objects.length; i++) { %>
          <li><%= objects[i].object %> <br>  -- confidence level: <%=Math.ceil(objects[i].confidence.toFixed(2) * 100)  %>%</li>
@@ -33,7 +33,7 @@
 
       <form action="/" enctype="multipart/form-data" method="post">
       <input type="file" id="inputOne" name="file-to-upload" />
-      <input type="submit" id="inputTwo"  value="Upload" />
+      <input class="button"type="submit" id="inputTwo"  value="Upload" />
     </form>
   </body>
 </html>
